@@ -8,7 +8,7 @@ pipeline {
                    def data = "Hello World\nSecond line\n" + date
                    writeFile(file: 'zorg.txt', text: data)
                    sh "ls -l"
-                  call "D:\\bin\\gatling.bat"
+                   call "D:\\bin\\gatling.bat"
                }
            }
        }
