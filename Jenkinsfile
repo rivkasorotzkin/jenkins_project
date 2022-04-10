@@ -39,6 +39,7 @@ pipeline {
       }
       steps {
          echo 'this is the build stage'
+        sh https://github.com/rivkasorotzkin/jenkins_project.git
       }
     }
     stage('run tests') {
