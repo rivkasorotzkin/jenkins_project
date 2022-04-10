@@ -47,7 +47,7 @@ pipeline {
         label 'test'
       }
       steps {
-         sh 'mvn clean'
+         sh 'java -version'
          echo 'this is the run stage'
 
       }
