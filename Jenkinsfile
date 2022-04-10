@@ -47,6 +47,7 @@ pipeline {
         label 'test'
       }
       steps {
+         sh 'mvn clean'
          echo 'this is the run stage'
 
       }
