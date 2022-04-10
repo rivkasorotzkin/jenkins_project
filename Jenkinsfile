@@ -23,7 +23,7 @@ pipeline {
         label 'test'
       }
       when{
-        branch 'master'
+        branch 'main'
       }
       steps {
          sh 'java -version'
