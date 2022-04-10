@@ -26,7 +26,6 @@ if ( JOB_NAME == "OpenGauss_nightly_valgrind" )
 {
   defaultValgrind = true
 }
-
 pipeline {
   parameters {
     booleanParam (defaultValue: defaultValgrind, name: 'valgrind')
@@ -58,10 +57,7 @@ pipeline {
       post {
         always {
            echo 'this is the always stage'
-
         }
       }
     }
   }
-}
-}
