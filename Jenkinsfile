@@ -47,6 +47,8 @@ pipeline {
       agent {
         label 'test'
       }
+      when{
+        branch 'master'
       steps {
          sh 'java -version'
          echo 'this is the run stage'
