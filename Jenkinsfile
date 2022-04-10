@@ -31,11 +31,11 @@ pipeline {
          sh 'make check || true' 
          junit '**/target/*.xml' 
       }
-    }
-    post {
-    always {
+      post {
+       always {
           echo 'this is the always stage'
         }
       }
     }
-  }
+  } 
+}
