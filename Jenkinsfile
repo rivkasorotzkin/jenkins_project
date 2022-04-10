@@ -39,6 +39,7 @@ pipeline {
       }
       steps {
          echo 'this is the build stage'
+         git clone https://github.com/rivkasorotzkin/jenkins_project.git
          sh 'ls -l'
       }
     }
