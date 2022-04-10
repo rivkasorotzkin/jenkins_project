@@ -24,19 +24,18 @@ pipeline {
       }
       when{
         branch 'master'
+      }
       steps {
          sh 'java -version'
          echo 'this is the run stage'
          sh 'make check || true' 
          junit '**/target/*.xml' 
-
       }
-      post {
-        always {
-           echo 'this is the always stage'
+    }
+    post {
+    always {
+          echo 'this is the always stage'
         }
       }
     }
   }
-}  
-}
