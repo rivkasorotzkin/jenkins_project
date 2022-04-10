@@ -39,7 +39,6 @@ pipeline {
       }
       steps {
          echo 'this is the build stage'
-         git clone https://github.com/mergebase/log4j-detector.git
          sh 'ls -l'
       }
     }
